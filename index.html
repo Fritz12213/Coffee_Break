@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Coffee Break Cafetería - Concepto premium de café artesanal, repostería selecta y un ambiente acogedor. Un abrazo en cada taza desde 1990.">
+  <title>Coffee Break | Cafetería de Especialidad</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="announcement-bar" id="announcement-bar">
+    <span><i class="bi bi-cup-hot-fill" style="color: var(--accent-color); margin-right: 6px;"></i>Coffee Break • "Un
+      abrazo en cada taza" • Abierto de Lunes a Domingo de 7:00 AM a 9:00 PM</span>
+  </div>
+
+  <!-- Main Header -->
+  <header class="main-header" id="main-header">
+    <div class="header-container">
+      <a href="#inicio" class="logo" id="header-logo">
+        <img src="assets/logo.png" alt="Coffee Break Logo" class="header-logo-img">
+        Coffee Break
+      </a>
+
+      <nav class="nav-menu" id="primary-nav">
+        <a href="#inicio" class="nav-link active">Inicio</a>
+        <a href="#identidad" class="nav-link">Identidad</a>
+        <a href="#mision-vision" class="nav-link">Misión y Visión</a>
+        <a href="#carta" class="nav-link">Menú</a>
+        <a href="#quiz" class="nav-link">Encuentra tu Café</a>
+        <a href="#contacto" class="btn-contact btn">Reservar</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Mobile Hamburger Menu Button -->
+        <button class="hamburger" id="nav-toggle" aria-label="Abrir menú de navegación">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="inicio">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="hero-tag">
+          <span><i class="bi bi-cup-hot"></i></span> Cafetería de Especialidad
+        </span>
+        <h1>Coffee Break <span>"Un abrazo en cada taza"</span></h1>
+        <p class="hero-desc">Somos una cafetería de prestigio orientada a satisfacer a nuestros clientes con productos
+          artesanales de excelente calidad y un ambiente cálido e inolvidable.</p>
+        <div class="hero-buttons">
+          <a href="#carta" class="btn btn-primary" id="cta-explore">Explorar Menú</a>
+          <a href="#quiz" class="btn btn-secondary" id="cta-quiz">Quiz del Café Ideal</a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <div class="hero-img-card">
+          <img src="assets/hero_coffee.png"
+            alt="Taza de café capuchino con arte latte sobre mesa de madera en Coffee Break" loading="eager">
+        </div>
+        <!-- Floating Glassmorphic Badge -->
+        <div class="floating-badge">
+          <span class="badge-icon" style="color: var(--accent-color);"><i class="bi bi-star-fill"></i></span>
+          <div class="badge-text">
+            <h4>Café Artesanal</h4>
+            <p>Tostado a la perfección</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Qué Somos Section -->
+  <section class="que-somos-section" id="que-somos">
+    <div class="container">
+      <div class="que-somos-content">
+        <span class="section-subtitle">¿Quiénes Somos?</span>
+        <p class="que-somos-text">
+          "Somos una cafetería de muy alto prestigio, donde queremos satisfacer a nuestros clientes con los mejores
+          productos y con una muy buena calidad"
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Brand Identity Section -->
+  <section class="section about" id="identidad">
+    <div class="container about-grid">
+      <div class="about-showcase">
+        <div class="stamp-container">
+          <img src="assets/logo.png" alt="Sello Dulce Grano Cafetería Logo" class="brand-logo-large">
+        </div>
+      </div>
+
+      <div class="about-details">
+        <span class="section-subtitle">Identidad de Marca</span>
+        <h3>Nuestra Esencia y Origen</h3>
+        <p>Nuestro logotipo rinde homenaje a nuestro blend artesanal insignia, **"Dulce Grano"**, establecido en 1990.
+          En su centro, la bolsa y los granos de café representan la tradición de la selección minuciosa de cosechas de
+          altura y la autenticidad en cada infusión.</p>
+        <p>La leyenda <em>'Café artesanal'</em> simboliza nuestro compromiso con métodos de preparación tradicionales y
+          dedicados. Los colores marrón oscuro, beige crema y marrón canela representan la calidez, la suavidad y el
+          confort de un café artesanal bien preparado, mientras que el negro aporta la elegancia y legibilidad perfectas
+          para la experiencia.</p>
+
+        <div class="about-palette">
+          <h4 class="palette-title">Paleta de Colores Corporativa</h4>
+          <div class="palette-grid">
+            <div class="swatch-card">
+              <div class="swatch-circle" style="background-color: #2B1E1A;"></div>
+              <span class="swatch-name">Marrón Oscuro</span>
+            </div>
+            <div class="swatch-card">
+              <div class="swatch-circle" style="background-color: #F2E2D2; border: 1px solid var(--border-color);">
+              </div>
+              <span class="swatch-name">Beige Crema</span>
+            </div>
+            <div class="swatch-card">
+              <div class="swatch-circle" style="background-color: #8C5E4B;"></div>
+              <span class="swatch-name">Marrón Canela</span>
+            </div>
+            <div class="swatch-card">
+              <div class="swatch-circle" style="background-color: #1A1A1A;"></div>
+              <span class="swatch-name">Negro Elegante</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strategic Direction (Mission & Vision) -->
+  <section class="section mv-section" id="mision-vision">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Dirección Estratégica</span>
+        <h2>Misión y Visión</h2>
+      </div>
+
+      <div class="mv-grid">
+        <!-- Misión Card -->
+        <div class="mv-card">
+          <span class="mv-icon"><i class="bi bi-target"
+              style="color: var(--accent-color); font-size: 2.2rem;"></i></span>
+          <h3>Misión</h3>
+          <p>En Coffee Break nuestra misión es ofrecer café de alta calidad, preparado con dedicación y pasión,
+            acompañado de un servicio amable y profesional. Buscamos crear un ambiente cálido y acogedor, fomentar el
+            trabajo en equipo y actuar con responsabilidad y honestidad, para brindar a cada cliente una experiencia
+            agradable que invite a regresar.</p>
+        </div>
+
+        <!-- Visión Card -->
+        <div class="mv-card">
+          <span class="mv-icon"><i class="bi bi-binoculars"
+              style="color: var(--accent-color); font-size: 2.2rem;"></i></span>
+          <h3>Visión</h3>
+          <p>En Coffee Break buscamos consolidarnos como una cafetería de confianza, reconocida por la calidad de
+            nuestro café, el buen servicio y un ambiente cálido, logrando clientes frecuentes y un equipo comprometido.
+            Nos convertiremos en un referente local por nuestro café de calidad, el trato humano y un espacio acogedor
+            que conecte a las personas en cada visita.</p>
+        </div>
+      </div>
+
+      <!-- Philosophy & Service -->
+      <div class="philosophy">
+        <div class="philosophy-content">
+          <h3>Nuestro servicio</h3>
+          <p>A nuestro cliente el café de especialidad, la interacción y el conocimiento de nuestro barista sobre el
+            producto son considerados los pilares más importantes ,para que el cliente regrese y que ellos se sientan
+            satisfechos por la atención recibida .Las publicidades serian Publicidad en el Menú y productos que
+            manejamos junto a promociones para que se expanda más la demanda de la tienda y sea más reconocida nuestra
+            marca entre los clientes.</p>
+        </div>
+        <div class="philosophy-img">
+          <img src="assets/cafe_interior.png" alt="Barista preparando café en la barra de Coffee Break" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Values Showcase -->
+      <div class="values-section-box" id="valores">
+        <h3 class="values-main-title">Nuestros Valores como Empresa</h3>
+        <div class="values-grid-layout">
+          <div class="priority-card">
+            <h4>Nuestra prioridad</h4>
+            <p>En Coffee Break priorizamos la calidad, el respeto, la honestidad y el compromiso con cada cliente.</p>
+          </div>
+          <div class="values-desc-text">
+            <p>En Coffee Break nos guiamos por la calidad, la honestidad y el respeto. Promovemos un servicio amable, el
+              trabajo en equipo y la responsabilidad, buscando siempre ofrecer una experiencia cálida y un café hecho
+              con pasión.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Menu Section (Filterable) -->
+  <section class="section menu-section" id="carta">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Viabilidad Financiera</span>
+        <h2>Nuestros Productos y Valores (Costo y Cuánto Gastamos)</h2>
+        <p style="color: var(--text-muted); margin-top: 15px; font-size: 1.1rem; line-height: 1.6;">
+          Nos distinguimos por ofrecer una hospitalidad impecable, creando un ambiente cálido donde cada cliente recibe
+          una atención cercana y personalizada.
+        </p>
+      </div>
+
+      <!-- Business Analysis Grid -->
+      <div class="business-grid">
+        <!-- Costos Card -->
+        <div class="business-card">
+          <h3>Costos Aproximados</h3>
+          <ul class="business-list">
+            <li>Espresso <span>$15.00</span></li>
+            <li>Filtrados <span>$25.00</span></li>
+            <li>Repostería Selecta <span>$15 - $25</span></li>
+            <li>Makaccino <span>$30.00</span></li>
+          </ul>
+        </div>
+
+        <!-- Precios Venta Card -->
+        <div class="business-card">
+          <h3>Precios de Venta</h3>
+          <ul class="business-list">
+            <li>Espresso <span>$45.00</span></li>
+            <li>Filtrados <span>$65.00</span></li>
+            <li>Repostería Selecta <span>$40 - $65</span></li>
+            <li>Makaccino <span>$70.00</span></li>
+          </ul>
+        </div>
+
+        <!-- Productos Desc Card -->
+        <div class="business-card">
+          <h3>Productos</h3>
+          <ul class="product-desc-list">
+            <li>
+              <strong>Espresso de Origen</strong>
+              Café intenso con notas de cacao.
+            </li>
+            <li>
+              <strong>Filtrados Artesanales (V60 / Chemex)</strong>
+              Resaltan los sabores y aromas del grano.
+            </li>
+            <li>
+              <strong>Repostería Selecta</strong>
+              Cheesecakes, Pay de Limón y Galletas.
+            </li>
+            <li>
+              <strong>Makaccino</strong>
+              Bebida con chocolate real 70% cacao.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Menu Category Filters -->
+      <div class="section-header" style="margin-top: 80px; margin-bottom: 40px;">
+        <span class="section-subtitle">Carta de Bebidas y Postres</span>
+        <h3>Explora Nuestra Variedad</h3>
+      </div>
+
+      <div class="menu-filters">
+        <button class="filter-btn active" data-category="all">Todos</button>
+        <button class="filter-btn" data-category="cafe">Café</button>
+        <button class="filter-btn" data-category="panaderia">Postres</button>
+        <button class="filter-btn" data-category="especiales">Especialidades</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="menu-grid" id="menu-grid">
+        <!-- Espresso de Origen -->
+        <div class="product-card" data-category="cafe">
+          <div class="product-img-box">
+            <img src="assets/hero_coffee.png" alt="Espresso de Origen" loading="lazy">
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <h3 class="product-title">Espresso de Origen</h3>
+              <div class="product-prices">
+                <span class="price-tag">$45.00</span>
+                <span class="cost-tag">Costo: $15.00</span>
+              </div>
+            </div>
+            <p class="product-desc">Café espresso intenso de grano único seleccionado, con notas naturales a cacao y
+              avellana.</p>
+          </div>
+        </div>
+
+        <!-- Filtrado V60 -->
+        <div class="product-card" data-category="cafe">
+          <div class="product-img-box">
+            <img src="assets/hero_coffee.png" alt="Filtrados Artesanales" loading="lazy">
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <h3 class="product-title">Filtrados Artesanales (V60 / Chemex)</h3>
+              <div class="product-prices">
+                <span class="price-tag">$65.00</span>
+                <span class="cost-tag">Costo: $25.00</span>
+              </div>
+            </div>
+            <p class="product-desc">Preparaciones lentas por goteo (V60 / Chemex) que destacan la acidez frutal y aromas
+              complejos.</p>
+          </div>
+        </div>
+
+        <!-- Pay de Limón Individual -->
+        <div class="product-card" data-category="panaderia">
+          <div class="product-img-box">
+            <img src="assets/pay_limon.png" alt="Pay de Limón Individual" loading="lazy">
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <h3 class="product-title">Pay de Limón Individual</h3>
+              <div class="product-prices">
+                <span class="price-tag">$55.00</span>
+                <span class="cost-tag">Costo: $20.00</span>
+              </div>
+            </div>
+            <p class="product-desc">Base crujiente de galleta con un relleno cremoso y ácido de limón, decorado con
+              merengue italiano y rodajas frescas.</p>
+          </div>
+        </div>
+
+        <!-- Galletas de Chispas con Fudge -->
+        <div class="product-card" data-category="panaderia">
+          <div class="product-img-box">
+            <img src="assets/galletas_fudge.jpg" alt="Galletas de Chispas con Fudge" loading="lazy">
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <h3 class="product-title">Galletas con Fudge de Chocolate</h3>
+              <div class="product-prices">
+                <span class="price-tag">$40.00</span>
+                <span class="cost-tag">Costo: $15.00</span>
+              </div>
+            </div>
+            <p class="product-desc">Galletas clásicas con abundantes chispas de chocolate belga, servidas con una copa
+              individual de fudge templado.</p>
+          </div>
+        </div>
+
+        <!-- Cheesecake New York con Fresa -->
+        <div class="product-card" data-category="panaderia">
+          <div class="product-img-box">
+            <img src="assets/cheesecake_fresa.jpg" alt="Cheesecake New York con Fresa" loading="lazy">
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <h3 class="product-title">Cheesecake New York con Fresa</h3>
+              <div class="product-prices">
+                <span class="price-tag">$65.00</span>
+                <span class="cost-tag">Costo: $25.00</span>
+              </div>
+            </div>
+            <p class="product-desc">Rebanada de cheesecake estilo Nueva York clásico con una tersa mermelada artesanal
+              de fresa y fresas naturales.</p>
+          </div>
+        </div>
+
+        <!-- Cheesecake de Frutos Rojos -->
+        <div class="product-card" data-category="panaderia">
+          <div class="product-img-box">
+            <img src="assets/cheesecake_frutos.jpg" alt="Cheesecake de Frutos Rojos" loading="lazy">
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <h3 class="product-title">Cheesecake de Frutos Rojos</h3>
+              <div class="product-prices">
+                <span class="price-tag">$65.00</span>
+                <span class="cost-tag">Costo: $25.00</span>
+              </div>
+            </div>
+            <p class="product-desc">Cremosa rebanada de cheesecake de la casa cubierto de una reducción artesanal de
+              frutos rojos de temporada.</p>
+          </div>
+        </div>
+
+        <!-- Caja Surtida de Cheesecakes -->
+        <div class="product-card" data-category="panaderia">
+          <div class="product-img-box">
+            <img src="assets/cheesecake_surtido.jpg" alt="Caja Surtida de Cheesecakes" loading="lazy">
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <h3 class="product-title">Caja Surtida de Cheesecakes</h3>
+              <div class="product-prices">
+                <span class="price-tag">$350.00</span>
+                <span class="cost-tag">Costo: $130.00</span>
+              </div>
+            </div>
+            <p class="product-desc">Selección premium para compartir: 6 rebanadas de cheesecakes variados (chocolate
+              fudge, fresa, maracuyá y frutos rojos).</p>
+          </div>
+        </div>
+
+        <!-- Makaccino -->
+        <div class="product-card" data-category="especiales">
+          <div class="product-img-box">
+            <img src="assets/hero_coffee.png" alt="Makaccino" loading="lazy">
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <h3 class="product-title">Makaccino</h3>
+              <div class="product-prices">
+                <span class="price-tag">$70.00</span>
+                <span class="cost-tag">Costo: $30.00</span>
+              </div>
+            </div>
+            <p class="product-desc">Bebida caliente premium elaborada con chocolate real al 70% de cacao y espresso.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Coffee Quiz Section -->
+  <section class="section quiz-section" id="quiz">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Experiencia Personalizada</span>
+        <h2>Encuentra tu Café Ideal</h2>
+        <p style="color: var(--text-muted); margin-top: 10px;">Responde 3 preguntas rápidas y nuestro barista digital te
+          recomendará tu bebida perfecta.</p>
+      </div>
+
+      <div class="quiz-container" id="quiz-container">
+        <!-- Progress Bar -->
+        <div class="quiz-progress">
+          <div class="quiz-progress-bar" id="quiz-progress-bar"></div>
+        </div>
+
+        <!-- Step 1: Flavor Profile -->
+        <div class="quiz-step active" data-step="1">
+          <h3 class="quiz-question">1. ¿Qué perfil de sabor prefieres en este momento?</h3>
+          <div class="quiz-options">
+            <div class="quiz-option" data-answer="dulce">
+              <span class="quiz-option-icon"><i class="bi bi-cookie" style="color: var(--accent-color);"></i></span>
+              <span>Dulce y Cremoso</span>
+            </div>
+            <div class="quiz-option" data-answer="fuerte">
+              <span class="quiz-option-icon"><i class="bi bi-cup-hot" style="color: var(--accent-color);"></i></span>
+              <span>Intenso y Puro</span>
+            </div>
+          </div>
+          <div class="quiz-footer">
+            <span>Paso 1 de 3</span>
+            <button class="btn btn-primary next-step-btn" disabled>Siguiente Paso</button>
+          </div>
+        </div>
+
+        <!-- Step 2: Temperature -->
+        <div class="quiz-step" data-step="2">
+          <h3 class="quiz-question">2. ¿Qué temperatura prefieres para tu bebida?</h3>
+          <div class="quiz-options">
+            <div class="quiz-option" data-answer="caliente">
+              <span class="quiz-option-icon"><i class="bi bi-fire" style="color: var(--accent-color);"></i></span>
+              <span>Caliente y Acogedor</span>
+            </div>
+            <div class="quiz-option" data-answer="frio">
+              <span class="quiz-option-icon"><i class="bi bi-snow" style="color: var(--accent-color);"></i></span>
+              <span>Frío y Refrescante</span>
+            </div>
+          </div>
+          <div class="quiz-footer">
+            <button class="btn btn-secondary prev-step-btn">Atrás</button>
+            <button class="btn btn-primary next-step-btn" disabled>Siguiente Paso</button>
+          </div>
+        </div>
+
+        <!-- Step 3: Caffeine Level -->
+        <div class="quiz-step" data-step="3">
+          <h3 class="quiz-question">3. ¿Qué nivel de energía o cafeína buscas hoy?</h3>
+          <div class="quiz-options">
+            <div class="quiz-option" data-answer="alta">
+              <span class="quiz-option-icon"><i class="bi bi-lightning-charge"
+                  style="color: var(--accent-color);"></i></span>
+              <span>Carga Completa (Cafeína)</span>
+            </div>
+            <div class="quiz-option" data-answer="baja">
+              <span class="quiz-option-icon"><i class="bi bi-leaf" style="color: var(--accent-color);"></i></span>
+              <span>Relajado / Moderado</span>
+            </div>
+          </div>
+          <div class="quiz-footer">
+            <button class="btn btn-secondary prev-step-btn">Atrás</button>
+            <button class="btn btn-primary next-step-btn" id="finish-quiz-btn" disabled>Ver Recomendación</button>
+          </div>
+        </div>
+
+        <!-- Result Step -->
+        <div class="quiz-step" data-step="result" id="quiz-result-step">
+          <div class="quiz-result-card">
+            <div class="quiz-result-visual" id="result-visual"><i class="bi bi-cup-hot"></i></div>
+            <h3 class="quiz-result-name" id="result-name">Tu Café Ideal</h3>
+            <p class="quiz-result-desc" id="result-desc">Cargando tu bebida recomendada por el barista de la casa...</p>
+            <div class="quiz-result-meta">
+              <div class="meta-item">Precio: <span id="result-price">$0.00</span></div>
+              <div class="meta-item">Maridaje: <span id="result-match">Croissant</span></div>
+            </div>
+            <div>
+              <button class="btn btn-secondary" id="restart-quiz-btn">Hacer de nuevo</button>
+              <a href="#contacto" class="btn btn-primary">Reservar una Mesa</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews / Testimonials Section -->
+  <section class="section reviews-section" id="testimonios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Opiniones</span>
+        <h2>La Experiencia de Nuestros Clientes</h2>
+      </div>
+
+      <div class="reviews-grid">
+        <!-- Card 1 -->
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <p class="review-text">"El mejor Capuchino Latte que he probado en la ciudad. El arte latte es precioso y el
+            ambiente del salón, acompañado de jazz suave, te desconecta del estrés diario."</p>
+          <div class="review-user">
+            <div class="user-avatar">SR</div>
+            <div class="user-info">
+              <h5>Sofia Rodriguez</h5>
+              <span>Cliente Frecuente</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <p class="review-text">"El Cold Brew es espectacular. Se nota la dedicación y el tiempo de extracción de 18
+            horas. Además, la atención de los baristas es impecable."</p>
+          <div class="review-user">
+            <div class="user-avatar">AM</div>
+            <div class="user-info">
+              <h5>Alejandro Mendoza</h5>
+              <span>Profesional de la Zona</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+              class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <p class="review-text">"Un abrazo en cada taza describe perfectamente a Coffee Break. Sus croissants y mini
+            pasteles de mango son delicias de otro mundo."</p>
+          <div class="review-user">
+            <div class="user-avatar">RP</div>
+            <div class="user-info">
+              <h5>Renata Ponce</h5>
+              <span>Estudiante</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation / Contact Section -->
+  <section class="section booking-section" id="contacto">
+    <div class="container booking-grid">
+
+      <!-- Contact Info -->
+      <div class="booking-info">
+        <div class="booking-header">
+          <span class="section-subtitle">Visítanos</span>
+          <h2>¡Reserva una Mesa o Escríbenos!</h2>
+          <p>Planea tu visita o solicita detalles adicionales sobre nuestro menú, eventos especiales o catas guiadas de
+            café artesanal.</p>
+        </div>
+
+        <div class="booking-details-list">
+          <!-- Address -->
+          <div class="booking-detail-card">
+            <div class="detail-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div class="detail-text">
+              <h4>Nuestra Ubicación</h4>
+              <p>Centro Histórico, Zona Comercial de Alto Flujo</p>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="booking-detail-card">
+            <div class="detail-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div class="detail-text">
+              <h4>Contacto Digital</h4>
+              <p>contacto@coffeebreak.com</p>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="booking-detail-card">
+            <div class="detail-icon"><i class="bi bi-telephone-fill"></i></div>
+            <div class="detail-text">
+              <h4>Reservas Telefónicas</h4>
+              <p>+52 (442) 765-4321 (Llamadas & WhatsApp)</p>
+            </div>
+          </div>
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/cofee_breaaaak?igsh=dWN2c3Fyb3pjanVw" target="_blank" class="booking-detail-card instagram-card-link">
+            <div class="detail-icon"><i class="bi bi-instagram"></i></div>
+            <div class="detail-text">
+              <h4>¡Síguenos en nuestro Instagram!</h4>
+              <p>@cofee_breaaaak</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Form Card -->
+      <div class="booking-form-card" id="booking-form-wrapper">
+        <h3>Escríbenos tu Consulta</h3>
+        <div class="form-alert" id="form-alert"></div>
+        <form id="booking-form" action="#" novalidate>
+          <div class="form-group">
+            <label class="form-label" for="name">Nombre Completo *</label>
+            <input type="text" id="name" class="form-control" placeholder="Ej. Ana Pérez" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Correo Electrónico *</label>
+            <input type="email" id="email" class="form-control" placeholder="tu@correo.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="guests">Número de Personas</label>
+            <select id="guests" class="form-control">
+              <option value="1">1 Persona</option>
+              <option value="2" selected>2 Personas</option>
+              <option value="3">3 Personas</option>
+              <option value="4">4 Personas</option>
+              <option value="5">5+ Personas</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Mensaje o Detalles Especiales</label>
+            <textarea id="message" class="form-control"
+              placeholder="Escribe aquí tu consulta, alergias alimentarias o especificaciones de reserva..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;" id="btn-submit">Enviar Mensaje</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+  c:\Users\Gerar\Downloads\WhatsApp_Image_2026-06-10_at_5.00.01_PM-removebg-preview.png
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo-box">
+          <img src="assets/logo.png" alt="Coffee Break Logo" class="footer-logo-img">
+          <h3>Coffee Break</h3>
+        </div>
+        <p>Un proyecto de cafetería de prestigio dedicado a la excelencia en café de especialidad y servicio artesanal.
+          "Un abrazo en cada taza". Estd. 1990.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul class="footer-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#identidad">Identidad</a></li>
+          <li><a href="#mision-vision">Misión y Visión</a></li>
+          <li><a href="#carta">La Carta</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Experiencias</h4>
+        <ul class="footer-links">
+          <li><a href="#quiz">Barista Digital</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Aesthetic Showcase</h4>
+        <div class="footer-instagram-grid">
+          <div class="instagram-item">
+            <img src="assets/hero_coffee.png" alt="Café de Especialidad" loading="lazy">
+          </div>
+          <div class="instagram-item">
+            <img src="assets/croissants.png" alt="Panadería Hojaldrada" loading="lazy">
+          </div>
+          <div class="instagram-item">
+            <img src="assets/bakery_pastry.png" alt="Mini Pastelería Fina" loading="lazy">
+          </div>
+          <div class="instagram-item">
+            <img src="assets/cafe_interior.png" alt="Barista barra de café" loading="lazy">
+          </div>
+          <div class="instagram-item">
+            <img src="assets/hero_coffee.png" alt="Taza Capuchino" loading="lazy">
+          </div>
+          <div class="instagram-item">
+            <img src="assets/croissants.png" alt="Hojaldre recién horneado" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Coffee Break Cafetería. Todos los derechos reservados. Inspirado en Dulce Grano Cafetería.</p>
+      <div class="footer-bottom-links">
+        <a href="#announcement-bar">Subir <i class="bi bi-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Interaction Scripts -->
+  <script src="app.js"></script>
+</body>
+
+</html>
