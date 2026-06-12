@@ -363,24 +363,25 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================
-  // CUSTOM PREMIUM SMOOTH SCROLL ANIMATION
+  // CUSTOM PREMIUM SMOOTH SCROLL ANIMATION (UNIFORM SPEED)
   // ==========================================
-  const smoothScrollTo = (targetY, duration = 800) => {
+  const smoothScrollTo = (targetY) => {
     const startY = window.scrollY;
     const difference = targetY - startY;
-    let startTime = null;
+    if (difference === 0) return;
 
-    // Easing function: easeInOutCubic (provides a premium, deceleration glide)
-    const easeInOutCubic = (t) => {
-      return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-    };
+    // Constant speed of 2.5 pixels per millisecond for a clean, uniform scroll
+    const speed = 2.5;
+    const duration = Math.min(Math.max(Math.abs(difference) / speed, 250), 1200);
+
+    let startTime = null;
 
     const step = (currentTime) => {
       if (!startTime) startTime = currentTime;
       const progress = Math.min((currentTime - startTime) / duration, 1);
-      const easedProgress = easeInOutCubic(progress);
       
-      window.scrollTo(0, startY + difference * easedProgress);
+      // Linear progress for perfectly uniform velocity (no slow-in or slow-out)
+      window.scrollTo(0, startY + difference * progress);
 
       if (progress < 1) {
         requestAnimationFrame(step);
@@ -416,7 +417,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         // Smoothly animate scroll to the calculated position
-        smoothScrollTo(targetPosition, 900); // 900ms duration for an elegant slide
+        smoothScrollTo(targetPosition);
         
         // Update URL hash without causing a page jump
         history.pushState(null, null, targetId);
