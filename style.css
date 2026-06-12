@@ -51,7 +51,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto; /* Evita conflicto con la animación de desplazamiento de JS en celulares/escritorio */
   font-size: 16px;
 }
 
