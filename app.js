@@ -272,7 +272,6 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('result-visual').innerHTML = `<i class="${recommendation.visual}"></i>`;
       document.getElementById('result-name').innerText = recommendation.name;
       document.getElementById('result-desc').innerText = recommendation.desc;
-      document.getElementById('result-price').innerText = recommendation.price;
       document.getElementById('result-match').innerText = recommendation.match;
 
       // Swap view to result page
@@ -363,4 +362,67 @@ document.addEventListener('DOMContentLoaded', () => {
     formAlert.style.display = 'block';
   }
 
+  // ==========================================
+  // CUSTOM PREMIUM SMOOTH SCROLL ANIMATION
+  // ==========================================
+  const smoothScrollTo = (targetY, duration = 800) => {
+    const startY = window.scrollY;
+    const difference = targetY - startY;
+    let startTime = null;
+
+    // Easing function: easeInOutCubic (provides a premium, deceleration glide)
+    const easeInOutCubic = (t) => {
+      return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    };
+
+    const step = (currentTime) => {
+      if (!startTime) startTime = currentTime;
+      const progress = Math.min((currentTime - startTime) / duration, 1);
+      const easedProgress = easeInOutCubic(progress);
+      
+      window.scrollTo(0, startY + difference * easedProgress);
+
+      if (progress < 1) {
+        requestAnimationFrame(step);
+      }
+    };
+
+    requestAnimationFrame(step);
+  };
+
+  const anchorLinks = document.querySelectorAll('a[href^="#"]');
+  anchorLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const targetId = link.getAttribute('href');
+      if (targetId === '#') return;
+      
+      // Special case for scrolling to top of page (announcement-bar or inicio)
+      let targetElement = document.querySelector(targetId);
+      if (targetId === '#announcement-bar') {
+        targetElement = document.body;
+      }
+      
+      if (targetElement) {
+        e.preventDefault();
+        
+        // Get header height dynamically (accounting for responsiveness and announcements)
+        const headerElement = document.getElementById('main-header');
+        const headerHeight = headerElement ? headerElement.offsetHeight : 80;
+        
+        let targetPosition = 0;
+        if (targetElement !== document.body) {
+          const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+          targetPosition = elementPosition - headerHeight;
+        }
+        
+        // Smoothly animate scroll to the calculated position
+        smoothScrollTo(targetPosition, 900); // 900ms duration for an elegant slide
+        
+        // Update URL hash without causing a page jump
+        history.pushState(null, null, targetId);
+      }
+    });
+  });
+
 });
+

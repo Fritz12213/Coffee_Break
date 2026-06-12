@@ -1308,7 +1308,6 @@ textarea.form-control {
   height: 44px;
   width: auto;
   object-fit: contain;
-  filter: brightness(0) invert(1);
 }
 
 .footer-col h4 {
@@ -1633,10 +1632,14 @@ textarea.form-control {
    ADDED SECTIONS: BUSINESS PRODUCTS & VALUES
    ========================================== */
 .business-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1.2fr;
-  gap: 30px;
+  display: flex;
+  justify-content: center;
   margin-top: 40px;
+}
+
+.business-grid .business-card {
+  width: 100%;
+  max-width: 600px;
 }
 
 .business-card {
@@ -1712,10 +1715,6 @@ textarea.form-control {
 }
 
 @media (max-width: 992px) {
-  .business-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
 }
 
 
